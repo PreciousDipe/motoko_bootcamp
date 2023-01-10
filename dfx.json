@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "FIRST_PROJECT_backend": {
+      "main": "src/FIRST_PROJECT_backend/main.mo",
+      "type": "motoko"
+    },
+    "FIRST_PROJECT_frontend": {
+      "dependencies": [
+        "FIRST_PROJECT_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/FIRST_PROJECT_frontend/src/index.html"
+      },
+      "source": [
+        "src/FIRST_PROJECT_frontend/assets",
+        "dist/FIRST_PROJECT_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
